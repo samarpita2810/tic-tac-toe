@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" type="image/png"
+    href="https://cpwebassets.codepen.io/assets/favicon/apple-touch-icon-5ae1a0698dcc2402e9712f7d01ed509a57814f994c660df9f7a952f3060705ee.png">
+  <meta name="apple-mobile-web-app-title" content="CodePen">
+
+  <link rel="shortcut icon" type="image/x-icon"
+    href="https://cpwebassets.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico">
+
+  <link rel="mask-icon" type="image/x-icon"
+    href="https://cpwebassets.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg"
+    color="#111">
+
+
+  <title> Tic Tac Toe game</title>
+
+
+  <link rel="stylesheet" href="https://getbootstrap.com/2.3.2/assets/css/bootstrap.css">
+  <link rel="stylesheet" href="./style.css">
+  <script>
+    window.console = window.console || function (t) { };
+  </script>
+
+
+
+  <script>
+    if (document.location.search.match(/type=embed/gi)) {
+      window.parent.postMessage("resize", "*");
+    }
+  </script>
+</head>
+
+<body translate="no">
+  <nav>
+    <ul>
+      <li>TIC-TAC-TOE</li>
+    </ul>
+  </nav>
+  <div id="tic-tac-toe">
+    <div class="span3 new_span">
+      <div class="row">
+        <h1 class="span3">LET'S PLAY!!!!</h1>
+         
+        <div class="span3">
+          <div class="input-prepend input-append">
+            <span class="add-on win_text">O won</span><strong id="o_win" class="win_times add-on"></strong><span
+              class="add-on">time(s)</span>
+          </div>
+          
+          <div class="input-prepend input-append">
+            <span class="add-on win_text">X won</span><strong id="x_win" class="win_times add-on"></strong><span
+              class="add-on">time(s)</span>
+          </div>
+
+        </div>
+
+
+
+      </div>
+      <div  >
+        <span class="info">Turn for O</span>
+      </div>
+      <ul class="row" id="game">
+        <li id="one" class="btn span1">+</li>
+        <li id="two" class="btn span1">+</li>
+        <li id="three" class="btn span1">+</li>
+        <li id="four" class="btn span1">+</li>
+        <li id="five" class="btn span1">+</li>
+        <li id="six" class="btn span1">+</li>
+        <li id="seven" class="btn span1">+</li>
+        <li id="eight" class="btn span1">+</li>
+        <li id="nine" class="btn span1">+</li>
+      </ul>
+      <div class="clr">&nbsp;</div>
+      <div class="row"><a href="#" id="reset" class="btn-success btn span3">Restart</a></div>
+      <div class="imgbox">
+        <img src="./excited.gif" alt="" style="width: 0px;">
+      </div>
+    </div>
+  </div>
+  
+  <script
+    src="https://cpwebassets.codepen.io/assets/common/stopExecutionOnTimeout-2c7831bb44f98c1391d6a4ffda0e1fd302503391ca806e7fcc7b9b87197aec26.js"></script>
+
+  <script src="https://code.jquery.com/jquery-1.7.2.min.js"></script>
+  <script src="./index.js"></script>
+</body>
+
+</html>
